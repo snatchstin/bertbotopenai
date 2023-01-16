@@ -49,12 +49,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #form {
-    position: fixed;
-    bottom: 0;
-  }
   #chatbox {
     margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
   }
   #introduction h1 {
     font-size: 28px;
@@ -70,6 +68,8 @@ body {
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
   #chatbox {
     margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
   }
   #introduction h1 {
     font-size: 28px;
