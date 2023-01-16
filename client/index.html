@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bert Bot</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div id="app">
@@ -18,9 +22,21 @@
             Hello! My name is Bert. Please ask me anything you want and I will
             try to the best of my ability to answer it!
           </h1>
+          <script>
+            function showChatBox() {
+              const introduction = document.getElementById("introduction");
+              const chatBox = document.getElementById("chatbox");
+
+              chatBox.style.visibility = "visible";
+              introduction.style.display = "none";
+            }
+          </script>
+          <button onclick="showChatBox()" class="clickToHide start">
+            <h2 style="color: white">Click here to start!</h2>
+          </button>
         </div>
       </div>
-      <form style="margin-bottom: 30px">
+      <form id="chatbox">
         <textarea
           name="prompt"
           rows="1"

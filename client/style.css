@@ -11,6 +11,101 @@ body {
   background: #343541;
 }
 
+.clickToHide {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  border-radius: 30px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.start {
+  background-color: #2196f3;
+} /* Blue */
+.start:hover {
+  background: #0b7dda;
+}
+#chatbox {
+  margin-bottom: 30px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  #introduction h1 {
+    font-size: 28px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .clickToHide {
+    font-size: 12px;
+  }
+
+  #chatbox {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #chatbox {
+    margin-bottom: 0px;
+  }
+  #introduction h1 {
+    font-size: 28px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .clickToHide {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+  #chatbox {
+    margin-bottom: 0px;
+  }
+  #introduction h1 {
+    font-size: 28px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .clickToHide {
+    font-size: 12px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 #app {
   width: 100vw;
   height: 100vh;
@@ -50,7 +145,7 @@ body {
 }
 
 .ai {
-  background: #40414F;
+  background: #40414f;
 }
 
 .chat {
@@ -69,7 +164,7 @@ body {
   height: 36px;
   border-radius: 5px;
 
-  background: #5436DA;
+  background: #5436da;
 
   display: flex;
   justify-content: center;
@@ -101,7 +196,7 @@ body {
    * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
    * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
   */
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -117,7 +212,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  background: #40414f;
 
   display: flex;
   flex-direction: row;
