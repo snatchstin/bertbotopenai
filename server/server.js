@@ -27,8 +27,10 @@ app.post("/", async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt:
-        "The following is a conversation with an AI assistant named Bert. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?\nBert: I am an AI created by Ashtin Evans using GPT-3. How can I help you today?\nHuman: ",
+      prompt: `The following is a conversation with an AI assistant named Bert. The assistant is helpful, creative, clever, and very friendly.
+        Human: Hello, who are you? 
+        Bert: I am an AI created by Ashtin Evans using GPT-3. How can I help you today?
+        Human: ${prompt}?`,
       temperature: 0.9,
       max_tokens: 150,
       top_p: 1,
